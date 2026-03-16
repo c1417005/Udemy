@@ -1,0 +1,26 @@
+@import url("destyle.css");
+.menu{
+    display:flex;
+    gap: 10px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    /* 中央文字ぞろえ */
+    justify-content: space-between;
+    /* 要素を左右ぞろえ */
+    padding: 10px;
+
+}
+
+nav h1{
+    font-size: 1.5em;
+    font-weight: bold;
+    /* 太字 */
+}
+
+a:not(.logo):hover{
+    color:aqua;
+    text-decoration: underline;
+}

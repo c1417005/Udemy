@@ -39,7 +39,10 @@ div.card{
 }
 
 .textsmall{
-    font-size: 0.8em;
+    font-size: .8em;
 }
 
+.card h3{
+    font-size: 1.5em;
+}
 
