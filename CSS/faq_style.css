@@ -1,0 +1,45 @@
+@import url('normalize.css');
+/* 先に読まないといけないファイルの読み忘れを防止 */
+/* CSSがCSSを読む */
+
+body{
+    background-color: #a0ad71;
+}
+
+p{
+    color:dimgray;
+}
+h1 {
+    color: dimgray;
+    font-size: 1.5em;
+}
+header{
+    background-color:white;
+    
+
+    /* 上下 左右の指定 */
+    
+    /* 外の壁からpaddingまでの空間：Margin
+    そのタグの内容からの空間 ： padding */
+}
+
+header,main,footer{
+    padding : 20px 30px;
+}
+
+div.card{
+    background-color: white;
+    padding:10px 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+.textsmall{
+    font-size: 0.8em;
+}
+
+
