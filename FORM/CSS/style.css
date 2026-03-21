@@ -1,0 +1,82 @@
+@import url("normalize.css");
+
+:root{
+    background-color: rgb(235, 233, 233);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.container{
+    width:100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    font-size: 20px;
+}
+.form-group{
+    margin-bottom: 1.5rem;
+
+}
+input[type="text"],
+input[type="email"],select,textarea
+{
+    border: 1px solid #ddd;
+    border-radius:4px;
+    font-size: 16px;
+    width: 100%;
+}
+label{
+    display: block;
+    /* インラインだと他の要素と１行に収まる */
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+button{
+    background-color: aqua;
+    color: #fff;
+    border :none;
+    padding :10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+    transition: background-color .3s;
+}
+button:hover{
+    background-color: rgb(3, 208, 208);
+}
+.required{
+    background-color: #f99;
+    padding: 2px 4px;
+    font-size: .8em;
+    border-radius: 2px;
+    margin-left: 4px;
+    color: #ffff;
+}
+.radio-group,.checkbox-group{
+    display: flex;
+    gap: 1.5rem;
+    margin-top: .5rem;
+}
+.radio-group label,.checkbox-group label{
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+
+}
+@media (max-width:680px){
+    .radio-group
+    ,.checkbox-group{
+        flex-direction: column;
+        gap: .5rem;
+    }
+}
