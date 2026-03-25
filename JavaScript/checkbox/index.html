@@ -19,5 +19,26 @@
         </div>
         
     </form>
+    <script>
+        const button = document.querySelector("button");
+        const checkbox = document.querySelector("#agree");
+
+        button.disabled = true;
+        checkbox.addEventListener("change",() =>
+    {
+        // if (checkbox.checked === true){
+        //jsでは比較演算子の「等しい」は    ===
+        //「等しくない」は!=
+        //     button.disabled = false;
+        // }
+        // else{
+        //     button.disabled = true;
+        // }
+
+        button.disabled = !checkbox.checked;
+        //ブーリアンによる分岐のif文ならこのように短く書ける。
+        
+    });
+    </script>
 </body>
 </html>

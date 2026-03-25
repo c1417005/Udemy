@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <div class = "container">
+
+        </div>
+        
+    
+    <br>
+
+    <script>
+        const prefs = [
+            '北海道',
+            '青森県',
+            '岩手県',
+            '宮城県',
+        ];
+
+        // prefs.push('秋田県','山形県');
+        // prefs.unshift('あいうえお');
+        //後ろから追加
+        //前から追加
+
+        // prefs.pop();
+        //後ろから削除
+        // prefs.shift();
+        //前から削除
+
+        // prefs[0] = 'ほっかいどう';
+        //０番目を置き換える
+        // prefs.splice(1,2,'あおもり','いわて');
+        //(挿入する添え字、削除する個数、置き換える値、置き換える値...)
+        
+        // for (let i =0; i<prefs.length; i++){
+        //     document.write(prefs[i] + '<br>');
+        // }
+
+        // for (pref of prefs){
+        //     document.write(pref + '<br>');
+        // }
+        //for of構文 配列等でしか使えないが簡単に書ける。
+
+        let html = '<select name = "pref" id = "pref">';
+
+
+        prefs.forEach((pref,index)=>{
+            html += '<option value = " ' + pref + '">' + pref + '</option>';
+        });
+        html += '</select>';
+        document.querySelector('.container').innerHTML = html;
+        // 配列のメソッドを使った書き方
+
+        
+
+
+    </script>
+</body>
+</html>
