@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const news = [
+        //自分で使うオブジェクトを新しく定義。
+        {
+        "title":"サイトを更新しました",
+        "date" : "2025-08-25",
+        "link" : "news1.html"
+       },
+       {
+        "title":"新商品を開発しました",
+        "date" : "2025-9-20",
+        "link" : "news2.html"
+       },
+       {
+        "title":"夏季休暇のお知らせ",
+        "date" : "2025-9-25",
+        "link" : "news3.html"
+       }
+    
+    ];
+
+    for (let item of news){
+        for (let key in item){
+            document.write(key + ':' + item[key] + "<br>")
+            //[プロパティ]でも値をとりだせる。
+            //for in 構文でオブジェクトからプロパティを取り出せる。
+
+        }
+        // document.write(
+        // '<a href = "' + item.link + '">' 
+        //  + item.date + ' '+
+        // item.title + "</a><br>");
+    }
+
+
+
+       
+
+       
+       //.なんとか でそれを取り出せる
+       
+    </script>
+</body>
+</html>
